@@ -1,0 +1,544 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 500%;
+    color: #f3f3f3;
+}
+
+h2 {
+    margin-top: 9%;
+    font-size: 250%;
+    font-family: "Droid Serif", serif;
+    letter-spacing: 2px;
+    color: #1c1c1c;
+}
+
+h3 {
+    font-size: 200%;
+    margin-bottom: 4%;
+}
+
+.title-underline {
+    width: 65px;
+    border: 1.5px solid #1c1c1c;
+    margin: 0 auto;
+    margin-bottom: 6%;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+/* ----NavBar---- */
+
+.logo img {
+    width: 80px;
+    margin-top: -9px;
+    margin-left: 90px;
+}
+
+.navbar-fixed-top {
+    background: rgba(0, 0, 0, .4);
+    font-size: 16px;
+    padding: 15px 90px 15px 20px;
+    border-bottom: 2px solid #04ced6;
+    -webkit-box-shadow: 0px 18px 123px -12px rgba(8,8,8,1);
+    box-shadow: 0px 18px 123px -12px rgba(8,8,8,1);
+}
+
+.navbar-default .navbar-nav > li > a:link,
+.navbar-default .navbar-nav > li > a:visited {
+    color: #f3f3f3;            
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #04c2c9;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+.navbar-default .active a {
+    color: #04c2c9 !important;
+    background: none !important;
+}
+
+.navbar-toggle.collapsed .icon-bar {
+    background-color: #f0f0f0;
+}
+
+
+/* ----Banner Design---- */
+
+#home {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/imgs/main-img.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/imgs/main-img.jpg");
+    height: 100vh;
+}
+
+.title-color {
+    color: #04c2c9;
+}
+
+.my-work-btn {
+    color: #f4f4f4;
+    background: none;
+    border: 2px solid #04c2c9;
+    padding: 20px 45px;
+    margin-top: 15%;
+    border-radius: 6px;
+    border-radius: 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.my-work-btn:link,
+.my-work-btn:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.my-work-btn:hover,
+.form-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #04c2c9;
+}
+
+.banner-text {
+    color: white;
+    margin-top: 40vh;
+    letter-spacing: 1px;
+}
+
+/* ----About Me---- */
+
+#about-me {
+    height: 60vh;
+    background-color: #fafafa;
+}
+
+.my-photo {
+    width: 50%;
+    margin-left: 40%;
+    margin-bottom: 25%;
+}
+
+.about-me-txt {
+    margin-top: 10%;
+    line-height: 1.6;
+    font-size: 20px;
+    color: #5f5f5f;
+}
+
+.color-txt {
+    font-weight: bold;
+    font-family: "Droid Serif", serif;
+    color: #04c2c9;
+    font-size: 150%;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.animated-icon {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+  /*  margin-top: 3%;*/
+}
+
+.skills-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20%;
+    font-size: 22px;
+}
+
+.underline {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+    margin-top: -22%;
+    padding-bottom: 5%;
+}
+
+/*----Skills----*/
+
+.skill-icon {
+    margin: 0 auto;
+    display: block;
+}
+
+.my-skills {
+    background-color: rgba(4, 193, 199, .31);
+}
+
+/* ----Portfolio pictures animation---- */
+
+#portfolio {
+    background-color: rgb(248, 249, 250);
+}
+
+.container-img {
+    position: relative;
+    margin-bottom: 35%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.middle {
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-img:hover .image {
+    opacity: 0.2;
+}
+
+.container-img:hover .middle {
+    opacity: 1;
+}
+
+.portfolio-link-btn {
+    color: white;
+    color: #1c1c1c;
+    background: none;
+    border: 2px solid #04c2c9;
+    padding: 6px 23px;
+    margin-top: 15%;
+    border-radius: 6px;
+    border-radius: 0px;
+    font-size: 18px;
+}
+
+.portfolio-link-btn:link,
+.portfolio-link-btn:visited {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.portfolio-link-btn:hover {
+    background-color: #04c2c9;
+    color: white;
+}
+
+.link-title {
+    color: #04c2c9;
+    font-size: 22px;
+    margin-bottom: 16%;
+}
+
+.link-description {
+    color: #1c1c1c;
+    font-size: 16px;
+    margin-bottom: 16%;
+}
+
+/* ----Contact section---- */
+
+.contact {
+    background-color: rgb(255, 208, 106);
+    background-color: #252934;
+}
+
+.section-heading-contact {
+    color: rgb(245, 245, 245);
+}
+
+.contact-underline {
+    width: 75px;
+    border: 1.5px solid white;
+    margin: 0 auto;
+    margin-bottom: 6%;
+}
+
+#contact-form {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+#contact-form p {
+    color: #adadad;
+}
+
+label {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+textarea,
+input {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    text-align: center;
+    background: none;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(245, 245, 245);
+    max-width: 90%;
+    padding: 1rem;
+    border: 2px dashed rgb(26, 26, 26);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: text;
+}
+
+textarea {
+    text-align: left;
+    resize: none;
+    width: 80%;
+    border-color: rgb(36, 36, 36);
+}
+
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+textarea:focus:required:valid {
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+textarea:required:valid {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input {
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+input:required,
+textarea:required {
+    border-bottom: 2px dashed #adadad;
+}
+
+input:focus {
+    border-bottom: 2px dashed rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input:required:valid {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input:required:invalid {
+    color: rgb(245, 245, 245);
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: rgb(245, 245, 245);
+    font-style: italic;
+    font-weight: 400;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+    color: rgb(245, 245, 245);
+    font-style: italic;
+    font-weight: 400;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+    color: rgb(245, 245, 245);
+    font-style: italic;
+    font-weight: 400;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+    color: rgb(245, 245, 245);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.expanding {
+    vertical-align: top;
+}
+
+.send-icn {
+    fill: #04c2c9;
+}
+
+.send-icn:hover {
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    margin: 2vmax;
+}
+
+button:hover small {
+    opacity: 1;
+}
+
+small {
+    display: block;
+    opacity: 0;
+    color: #04c2c9;
+}
+
+#footer {
+    background-color: #1b242f;
+    background-color: rgb(25, 33, 43);
+    padding-top: 1%;
+    margin-bottom: 0;
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+}
+
+
+/* ---- Media Queries ---- */
+
+/*Navbar burger animation*/
+.navbar-toggle .icon-bar { width: 28px; background: #fff;-webkit-transition: .5s ease;transition: .5s ease;}
+.navbar-toggle.collapsed .icon-bar:nth-child(2){-webkit-transform: rotate(0)translateY(0)translateX(0);transform: rotate(0)translateY(0)translateX(0);}
+.navbar-toggle.collapsed .icon-bar:nth-child(3){opacity:1}
+.navbar-toggle.collapsed .icon-bar:nth-child(4){-webkit-transform:rotate(0)translateY(0)translateX(0);transform:rotate(0)translateY(0)translateX(0);}
+.navbar-toggle .icon-bar:nth-child(2){-webkit-transform: rotate(-45deg)translateY(5px)translateX(-5px);transform: rotate(-45deg)translateY(5px)translateX(-5px);}
+.navbar-toggle .icon-bar:nth-child(3){opacity: 0}
+.navbar-toggle .icon-bar:nth-child(4){-webkit-transform:rotate(45deg)translateY(-4px)translateX(-3px);transform:rotate(45deg)translateY(-4px)translateX(-3px);}
+
+@media only screen and (max-width: 1200px) {
+    
+    .about-me-txt {
+        font-size: 18px;
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    
+    .my-photo {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .about-me-txt {
+        margin-bottom: 6%;
+        padding: 0 11%;
+    }
+    h1 {
+        font-size: 400%;
+    }
+    h2 {
+        margin-top: 7%;
+        font-size: 230%;
+    }
+    h3 {
+        font-size: 180%;
+        margin-top: 2%;
+        margin-bottom: 8%;
+    }
+    .animated-icon {
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+    }
+    .margin-spacing {
+        margin-top: -5%;
+    }
+    .my-work-btn {
+        padding: 12px 25px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .navbar-fixed-top {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 5px 10px;
+    }
+    
+    .logo img {
+        display: none;
+    }
+    h1 {
+        font-size: 235%;
+    }
+    h2 {
+        font-size: 140%;
+        margin-top: 12%;
+    }
+    .my-work-btn {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .about-me-txt {
+        font-size: 12px;
+    }
+    #contact-form p {
+        font-size: 14px;
+    }
+    input:required {
+        font-size: 16px;
+    }
+    textarea:required {
+        font-size: 16px;
+    }
+    svg.send-icn {
+        width: 25%;
+    }
+}
+/*
+.blue-square {
+    height: 90px;
+    width: 280px;
+    background-color: #04c2c9;
+    margin-top: -31%;
+    margin-left: 67.7%;
+    position: relative;
+    z-index: -1;
+}
+
+.white-text {
+    color: white;
+    font-size: 30px;
+    padding-right: 3px;
+    font-family: "Droid Serif", serif;
+    position: absolute;
+}
+
+.about-work-text {
+    letter-spacing: 1px;
+    font-size: 18px;
+}*/
