@@ -221,7 +221,7 @@ h3 {
 }
 
 .container-img:hover .image {
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .container-img:hover .middle {
@@ -253,13 +253,13 @@ h3 {
 
 .link-title {
     color: #04c2c9;
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 16%;
 }
 
 .link-description {
     color: #1c1c1c;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 16%;
 }
 
