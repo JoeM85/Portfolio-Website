@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,34 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110957358-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-110957358-1');
-
-    </script>
     <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-N54D6BT');
-
-    </script>
+    <script src="js/google-tag-manager-one.js"></script>
+    <script src="js/google-tag-manager-two.js"></script>
     <!-- End Google Tag Manager -->
     <meta name="application-name" content="joemoran.me">
     <meta name="description" content="Portfolio of Front-end developer - Joe Moran">
@@ -138,11 +113,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1000" class="col-md-6">
                     <img class="my-photo about-img-appear" src="imgs/about-me.jpg" alt="Picture of me">
-                    <!-- <div class="blue-square"></div> -->
                 </div>
                 <div class="col-md-6">
                     <p data-aos="fade-left" data-aos-duration="1000" class="about-me-txt"><span class="color-txt">I'm</span> a self taught front-end developer who is very passionate about building beautiful websites. I design performance driven, responsive websites that work seamlessly across devices. I make it a point to explore and learn something new with every project I work on. It keeps things interesting and helps to push what's possible for my clients.</p>
-                    <!-- <p class="about-work-text"><span class="white-text">Let's</span>work together.</p>-->
                 </div>
             </div>
         </div>
@@ -219,7 +192,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4 col-sm-6 no-padding">
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="900" class="container-img">
                         <img src="imgs/donut-crazy.jpg" alt="Screen capture of a website" class="image">
@@ -230,7 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4 col-sm-6 no-padding">
                     <div data-aos="fade-up" data-aos-duration="900" class="container-img">
                         <img src="imgs/grand-concepts.jpg" alt="Screen capture of a website" class="image">
@@ -241,7 +214,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div>
-            
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 no-padding">
+                    <div data-aos="fade-up" data-aos-duration="900" class="container-img">
+                        <img src="imgs/simon-game.jpg" alt="Screen capture of a website" class="image">
+                        <div class="middle">
+                            <p class="link-title">Simon Game</p>
+                            <a class="portfolio-link-btn demo-btn" href="simon.html" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a class="portfolio-link-btn" href="https://github.com/JoeM85/Simon-Game" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 no-padding">
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="900" class="container-img">
+                        <img src="imgs/calculator.jpg" alt="Screen capture of a website" class="image">
+                        <div class="middle">
+                            <p class="link-title">Calculator</p>
+                            <a class="portfolio-link-btn demo-btn" href="calculator.html" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a class="portfolio-link-btn" href="https://github.com/JoeM85/Javascript-Calculator" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -254,7 +251,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div>
                 <hr class="contact-underline">
             </div>
-            <form data-aos="zoom-in" data-aos-duration="900" method="post" action="mailer.php" id="contact-form">
+            <form method="post" action="mailer.php" id="contact-form">
                 <p>Dear Joe,</p>
                 <p>My
                     <label for="name">name</label> is
