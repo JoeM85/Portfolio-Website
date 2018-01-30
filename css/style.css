@@ -326,7 +326,7 @@ input {
 textarea {
     text-align: left;
     resize: none;
-    width: 80%;
+    width: 65%;
     border-color: rgb(36, 36, 36);
 }
 
