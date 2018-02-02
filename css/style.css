@@ -5,21 +5,15 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "museoo";
-    src: url('font/Museo300-Regular.tff') format('truetype');
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
 
-
 h1 {
     font-size: 500%;
     color: #f3f3f3;
-    font-family: 'Voces', cursive;
+    font-family: 'Voces', sans-serif;
 }
 
 h2 {
@@ -27,7 +21,7 @@ h2 {
     font-size: 250%;
     letter-spacing: 2px;
     color: #1c1c1c;
-    font-family: 'Voces', cursive;
+    font-family: 'Voces', sans-serif;
 }
 
 h3 {
