@@ -36,10 +36,6 @@ h3 {
     margin-bottom: 6%;
 }
 
-.no-padding {
-   // padding: 0 !important;
-}
-
 /* ----NavBar---- */
 
 .logo img {
@@ -61,10 +57,14 @@ h3 {
 .navbar-default .navbar-nav > li > a:visited {
     color: #f3f3f3;
     font-size: 16px;
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
     color: #04c2c9;
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
 }
 
 .navbar-default .navbar-toggle {
@@ -102,6 +102,16 @@ h3 {
     border-radius: 0px;
     font-weight: bold;
     font-size: 18px;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.btn-arrow {
+    width: 32px;
+    padding-left: 1%;
+    padding-bottom: 6px;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
 }
 
 .my-work-btn:link,
@@ -115,6 +125,18 @@ h3 {
     text-decoration: none;
     color: white;
     background-color: #04c2c9;
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.my-work-btn:hover .btn-arrow {
+    margin-top: -8px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform-origin: 20%;
+    transform-origin: 60%;
+    transition: all 200ms ease-in;
 }
 
 .banner-text {
@@ -192,7 +214,6 @@ h3 {
 .container-img {
     position: relative;
     margin-bottom: 20%;
-    //width: 90%;
     padding: 0 5%;
 }
 
@@ -484,7 +505,9 @@ small {
 }
 
 @media only screen and (max-width: 992px) {
-
+    .btn-arrow {
+        width: 20px;
+    }
     .my-photo {
         display: block;
         width: 30%;
@@ -515,13 +538,13 @@ small {
     .my-work-btn {
         padding: 12px 25px;
     }
-     .section-heading-contact {
+    .section-heading-contact {
         margin-top: 12%;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    
+
     .navbar-fixed-top {
         padding-right: 20px;
     }
@@ -536,7 +559,7 @@ small {
         width: 15%;
     }
     .my-skills {
-        padding-top: 5%;     
+        padding-top: 5%;
     }
     .skills-title {
         font-size: 16px;
@@ -563,6 +586,10 @@ small {
     .logo img {
         display: none;
     }
+    .btn-arrow {
+        width: 17px;
+        margin-left: 2px;
+    }
     h1 {
         font-size: 235%;
     }
@@ -585,7 +612,7 @@ small {
     svg.send-icn {
         width: 25%;
     }
-     .section-heading-contact {
+    .section-heading-contact {
         margin-top: 20%;
     }
 }
