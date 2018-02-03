@@ -37,7 +37,7 @@ h3 {
 }
 
 .no-padding {
-    padding: 0 !important;
+   // padding: 0 !important;
 }
 
 /* ----NavBar---- */
@@ -125,8 +125,7 @@ h3 {
 
 /* ----About Me---- */
 
-#about-me {
-    height: 60vh;
+#about {
     background-color: #fafafa;
 }
 
@@ -177,19 +176,24 @@ h3 {
 
 .my-skills {
     background-color: rgba(4, 193, 199, .31);
+    padding: 0 10%;
     padding-top: 1%;
 }
+
 
 /* ----Portfolio pictures animation---- */
 
 #portfolio {
     background-color: rgb(248, 249, 250);
+    padding-bottom: 6%;
+    margin-bottom: -6%;
 }
 
 .container-img {
     position: relative;
     margin-bottom: 20%;
-    width: 90%;
+    //width: 90%;
+    padding: 0 5%;
 }
 
 .image {
@@ -272,6 +276,8 @@ h3 {
 .contact {
     background-color: rgb(255, 208, 106);
     background-color: #252934;
+    -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .section-heading-contact {
@@ -488,9 +494,6 @@ small {
         margin-bottom: 6%;
         padding: 0 11%;
     }
-   /* .skills {
-        display: block;
-    }*/
     .skills-title {
         font-size: 18px;
     }
@@ -512,12 +515,15 @@ small {
     .my-work-btn {
         padding: 12px 25px;
     }
+     .section-heading-contact {
+        margin-top: 12%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     
     .navbar-fixed-top {
-    padding-right: 20px;
+        padding-right: 20px;
     }
     .container-img {
         width: 100%;
@@ -530,14 +536,20 @@ small {
         width: 15%;
     }
     .my-skills {
-        padding-top: 5%;
+        padding-top: 5%;     
     }
     .skills-title {
-        font-size: 14px;
+        font-size: 16px;
     }
     .my-work-btn {
         padding: 8px 20px;
-        font-size: 12px;
+        font-size: 14px;
+    }
+    #portfolio {
+        margin-bottom: -15%;
+    }
+    .section-heading-contact {
+        margin-top: 12%;
     }
 }
 
@@ -559,7 +571,7 @@ small {
         margin-top: 12%;
     }
     .about-me-txt {
-        font-size: 12px;
+        font-size: 14px;
     }
     #contact-form p {
         font-size: 14px;
@@ -572,5 +584,8 @@ small {
     }
     svg.send-icn {
         width: 25%;
+    }
+     .section-heading-contact {
+        margin-top: 20%;
     }
 }
