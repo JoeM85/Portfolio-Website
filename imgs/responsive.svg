@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 586.5 432.5" style="enable-background:new 0 0 586.5 432.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:#fafafa;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill:#fafafa;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:#fafafa;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:#fafafa;stroke:#000000;stroke-miterlimit:10;}
+	.st5{fill:#fafafa;}
+</style>
+<g id="computer">
+	<line class="st0" x1="263.7" y1="359.3" x2="263.7" y2="424.5"/>
+	<g>
+		<path class="st1" d="M505.4,359.3H15c-6.6,0-12-5.4-12-12V15C3,8.4,8.4,3,15,3h490.4c6.6,0,12,5.4,12,12v332.3
+			C517.4,353.9,512,359.3,505.4,359.3z"/>
+		<line class="st0" x1="183.2" y1="424.5" x2="340.6" y2="424.5"/>
+		<rect x="47.8" y="45" class="st2" width="425.7" height="262.1"/>
+	</g>
+</g>
+<g id="phone">
+	<path class="st1" d="M118.5,427.5h-77c-6.6,0-12-5.4-12-12v-136c0-6.6,5.4-12,12-12h77c6.6,0,12,5.4,12,12v136
+		C130.5,422.1,125.1,427.5,118.5,427.5z"/>
+	<rect x="42" y="287" class="st2" width="75" height="112"/>
+	<circle class="st3" cx="79.5" cy="411.5" r="6"/>
+	<circle class="st4" cx="80" cy="278" r="3"/>
+</g>
+<g id="tablet">
+	<g>
+		<path class="st5" d="M377.5,429.5c-5,0-9-4-9-9v-276c0-5,4-9,9-9h197c5,0,9,4,9,9v276c0,5-4,9-9,9H377.5z"/>
+		<path d="M574.5,138.5c3.3,0,6,2.7,6,6v276c0,3.3-2.7,6-6,6h-197c-3.3,0-6-2.7-6-6v-276c0-3.3,2.7-6,6-6H574.5 M574.5,132.5h-197
+			c-6.6,0-12,5.4-12,12v276c0,6.6,5.4,12,12,12h197c6.6,0,12-5.4,12-12v-276C586.5,137.9,581.1,132.5,574.5,132.5L574.5,132.5z"/>
+	</g>
+	<g>
+		<rect x="389.5" y="155.5" class="st5" width="173" height="213"/>
+		<path d="M560.5,157.5v209h-169v-209H560.5 M564.5,153.5h-177v217h177V153.5L564.5,153.5z"/>
+	</g>
+	<g>
+		<circle class="st5" cx="476" cy="397" r="7"/>
+		<path d="M476,391.5c3,0,5.5,2.5,5.5,5.5s-2.5,5.5-5.5,5.5s-5.5-2.5-5.5-5.5S473,391.5,476,391.5 M476,388.5
+			c-4.7,0-8.5,3.8-8.5,8.5s3.8,8.5,8.5,8.5s8.5-3.8,8.5-8.5S480.7,388.5,476,388.5L476,388.5z"/>
+	</g>
+</g>
+</svg>
