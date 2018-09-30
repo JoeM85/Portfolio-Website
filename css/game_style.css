@@ -1,0 +1,327 @@
+body {
+    text-align: center;
+    font-family: "Luckiest Guy", sans-serif;
+    background-color: #f5e8d0;
+}
+
+a {
+    color: black;
+    font-size: 22px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #8c9729;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #4f4fa9;
+    color: #68ba4d;
+    color: #8c9729;
+}
+
+/*---Start screen---*/
+
+h1 {
+    font-size: 85px;
+    margin-bottom: 4%;
+    color: #5b5b8c;
+    color: #4f4fa9;
+    color: #a17546;
+    color: #68ba4d;
+    color: #8c9729;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+/*
+    -webkit-animation: shake .82s cubic-bezier(.36, .07, .19, .97);
+    animation: shake .82s cubic-bezier(.36, .07, .19, .97);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+*/
+}
+
+#start-screen {
+    font-family: "Luckiest Guy", sans-serif;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d4cfcf;
+    background-color: wheat;
+    background-color: #f5e8d0;
+    padding-top: 5%;
+}
+
+table {
+    margin: 0 auto;
+    width: 95%;
+}
+
+th {
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+td {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+#info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.score-container {
+    margin-top: -9%;
+    margin-left: 10%;
+}
+
+.how-to-container {
+    text-align: left;
+    margin-top: -9%;
+    margin-right: 6%;
+    line-height: 1.6;
+}
+
+.how-to-container p {
+    font-family: "Osward", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.char-select {
+    display: inline;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.title-container p {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: -2%;
+}
+
+.char-select:hover {
+    cursor: pointer;
+    -webkit-filter: none;
+    filter: none;
+}
+
+/*---Game Screen---*/
+
+.game-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.life-img {
+    width: 50px;
+    height: 80px;
+}
+
+.life-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.life-container p,
+.gem-container p {
+    font-size: 25px;
+    color: #212121;
+}
+.gem-container {
+    margin-top: 13px;
+}
+.gem-img {
+    width: 35px;
+    height: 56px;
+}
+
+#scoreContainer {
+    margin-top: -1;
+    margin-bottom: -2%;
+}
+
+#score {
+    padding-left: 1%;
+    font-size: 35px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    color: #8c9729;
+}
+
+#scoreText {
+    font-size: 35px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    color: #8c9729;
+}
+
+/*--- Game Over Screen ---*/
+
+.game-over {
+    display: none;
+}
+
+.game-over-text {
+    font-size: 60px;
+}
+
+.game-over-container {
+    margin-top: 15%;
+}
+
+/*--- High Score Screen ---*/
+
+.high-score {
+    display: none;
+}
+
+.high-score-container {
+    margin-top: 9%;
+}
+
+.congrats-text {
+    font-size: 65px;
+}
+
+.high-score-text {
+    font-size: 55px;
+}
+
+.new-high-score {
+    font-size: 65px;
+}
+
+#name-input {
+    border: 2px solid white;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #f5e8d0;
+    font-size: 43px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    letter-spacing: 20px;
+    padding-left: 3%;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.initial-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+}
+
+#submit {
+    background-color: #8c9729;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 3%;
+    padding: 12px 30px;
+    letter-spacing: 2px;
+}
+
+#submit:focus {
+    outline: 0;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #6c7619;
+}
+
+/*---Added to show desired page---*/
+
+.appear {
+    display: block;
+    position: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #f5e8d0;
+}
+
+/*---Animation---*/
+
+@-webkit-keyframes shake {
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
+}

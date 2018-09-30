@@ -37,14 +37,14 @@ $(document).ready(function () {
     });
 
     /*----Logo hover change----*/
-    $('.hover-change').hover(function () {
-        this.src = '/imgs/logo-reverse.png';
-        $(".navbar-fixed-top").css("border-color", "#c94c4c")
-    }, function () {
-        this.src = '/imgs/my-logo.png';
-        $(".navbar-fixed-top").css("border-color", "#04ced6")
-    });
-
+//    $('.hover-change').hover(function () {
+//        this.src = '/imgs/logo-reverse.png';
+//        $(".navbar-fixed-top").css("border-color", "#c94c4c")
+//    }, function () {
+//        this.src = '/imgs/my-logo.png';
+//        $(".navbar-fixed-top").css("border-color", "#04ced6")
+//    });
+      
     //Random Stars
     const generateStars = () => {
 
@@ -78,6 +78,7 @@ $(document).ready(function () {
     };
 
     let winheight, docheight, trackLength, throttlescroll;
+    const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
     function getmeasurements() {
         winheight = window.innerHeight || (document.documentElement || document.body).clientHeight;
@@ -94,17 +95,16 @@ $(document).ready(function () {
       const mySvgShirt = document.querySelector(".st3");
       const mySvgHair = document.querySelectorAll(".st4");
       const mySvgSkin = document.querySelectorAll(".st6");
-      const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       const scrollTop = window.pageYOffset;
       const pctScrolled = Math.floor(scrollTop / trackLength * 100);
         if(width <= 500) {
-            getAmountScolled(18, 26);
+            getAmountScolled(15, 26);
         } else if(width <= 766 && width >= 501) {
             getAmountScolled(13, 26);
         } else if(width <= 1066 && width >= 767) {
             getAmountScolled(32, 50);
         } else if(width >= 1067) {
-            getAmountScolled(26, 45);
+            getAmountScolled(24, 45);
         }
         
         function getAmountScolled(num1, num2) {
@@ -127,9 +127,7 @@ $(document).ready(function () {
             mySvgHair.forEach(color => color.classList.remove("st4-color"));
             mySvgSkin.forEach(color => color.classList.remove("st6-color"));
       }
-    }
-
-       
+    }   
   };
 
     getmeasurements();
@@ -144,5 +142,12 @@ $(document).ready(function () {
             amountscrolled();
         }, 250)
     }, false);
-    
+    //Hides navbar drop down on click
+    if(width <= 844) {
+        $('.nav a').on('click', function(){
+            $('.navbar-toggle').click();
+        }); 
+    }
+                                
 });
+    
